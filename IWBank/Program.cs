@@ -1,3 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace IWBank;
 
-Console.WriteLine("Hello, World!");
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+    }
+}
