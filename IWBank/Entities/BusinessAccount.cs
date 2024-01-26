@@ -8,4 +8,12 @@ public class BusinessAccount : Account
     {
         LoanLimit = loanLimits;
     }
+
+    public void Loan(double amount)
+    {
+        if (amount <= LoanLimit)
+        {
+            Deposit(LoanLimit);
+        }
+    }
 }
