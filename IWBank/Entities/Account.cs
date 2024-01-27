@@ -14,9 +14,10 @@ public class Account
         Number = number;
     }
 
-    public void Withdraw(double amount)
+    //key 'virtual' permite que sub classes façam a sobreposicao do metodo da classe acima
+    public virtual void Withdraw(double amount)
     {
-        Balance -= amount;
+        Balance -= amount + 5.0;
     }
 
     public void Deposit(double amount)

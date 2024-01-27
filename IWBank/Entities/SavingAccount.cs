@@ -13,4 +13,10 @@ public class SavingAccount : Account
     {
         Balance += Balance * InterestRate;
     }
+
+    //sobreposicao na sub classe
+    public override void Withdraw(double amount)
+    {
+       Balance -= amount;
+    }
 }
