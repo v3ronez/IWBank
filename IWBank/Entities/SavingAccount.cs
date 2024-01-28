@@ -1,6 +1,6 @@
 namespace IWBank.Entities;
 
-public class SavingAccount : Account
+public class SavingAccount : Account //classes sealed nao podem ser extendidas a sub classes
 {
     public double InterestRate { get; private set; }
 
@@ -15,7 +15,8 @@ public class SavingAccount : Account
     }
 
     //sobreposicao na sub classe
-    public override void Withdraw(double amount)
+    // metodos sealed nao podem ser sobrescritos novamente
+    public override sealed void Withdraw(double amount)
     {
        Balance -= amount;
     }
