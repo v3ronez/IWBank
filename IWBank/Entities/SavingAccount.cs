@@ -14,10 +14,10 @@ public class SavingAccount : Account //classes sealed nao podem ser extendidas a
         Balance += Balance * InterestRate;
     }
 
-    //sobreposicao na sub classe
+    // sobreposicao na sub classe
     // metodos sealed nao podem ser sobrescritos novamente
     public override sealed void Withdraw(double amount)
     {
-       Balance -= amount;
+        Balance -= amount;
     }
 }
